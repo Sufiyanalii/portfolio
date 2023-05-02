@@ -7,6 +7,9 @@ router.get('/',(req,res)=>{
     res.render(`home.ejs`);
 
 })
+router.get('/home',(req,res)=>{
+    res.render(`home.ejs`);
 
+})
 
 module.exports = router;
