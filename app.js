@@ -1,5 +1,5 @@
 const express = require('express');
-const portfolio=require('./routes/index');
+const portfolio=require('./routes/Index');
 const app = express();
 const path = require('path');
 const PORT =3000;
@@ -20,18 +20,6 @@ app.use('/',portfolio);
 
 // })
 
-app.get('/a',(req,res)=>{
-    res.render(`index.ejs`);
-
-})
-app.get('/b',(req,res)=>{
-    res.render(`index-2.ejs`);
-
-})
-app.get('/c',(req,res)=>{
-    res.render(`blog-bar.ejs`);
-
-})
 
 
 
